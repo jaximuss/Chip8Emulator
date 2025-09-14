@@ -201,7 +201,6 @@ namespace Chip8Emulator.Core
         {
             PC = NNN;
         }
-
         private void OpCALLNNN(ushort NNN)//2NNN
         {
             _stack[_sp] = PC;
