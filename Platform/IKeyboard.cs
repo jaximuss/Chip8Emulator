@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Chip8Emulator.Platform
 {
-    internal interface IKeyboard
+    public interface IKeyboard
     {
+        bool IsPressed(byte key);  // 0x0..0xF
+        byte WaitKey();            // blocking until a key in 0..F is pressed
     }
 }

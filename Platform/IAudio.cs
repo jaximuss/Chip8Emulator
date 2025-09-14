@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Chip8Emulator.Platform
 {
-    internal interface IAudio
+    public interface IAudio
     {
+       void Beep(bool on); 
     }
 }

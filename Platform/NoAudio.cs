@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Chip8Emulator.Platform
 {
-    internal class NoAudio
+    public class NoAudio : IAudio
     {
+        public void Beep(bool on)
+        {
+
+        }
     }
 }

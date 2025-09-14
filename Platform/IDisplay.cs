@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Chip8Emulator.Platform
 {
-    internal interface IDisplay
+    public interface IDisplay
     {
+        void Clear();
+        void Render(bool[,] buffer); // 64x32
     }
 }
