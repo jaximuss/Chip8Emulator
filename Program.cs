@@ -13,12 +13,11 @@ class Program
         IDisplay display = new ConsoleDisplay();
         IKeyboard keyboard = new ConsoleKeyboard();
         IAudio audio = new NoAudio();
-
         var chip8 = new Chip8(display, keyboard, audio);
         chip8.Reset();
 
         // pick a ROM
-        var romPath = "C:\\Users\\chidi\\Desktop\\Emulators\\Chip8Emulator\\Roms\\glitchGhost.ch8";
+        var romPath = "C:\\Users\\chidi\\Desktop\\Emulators\\Chip8Emulator\\Roms\\8ceattourny_d1.ch8";
         if (!File.Exists(romPath))
         {
             Console.WriteLine($"ROM not found: {romPath}");

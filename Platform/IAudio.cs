@@ -8,6 +8,9 @@ namespace Chip8Emulator.Platform
 {
     public interface IAudio
     {
-       void Beep(bool on); 
+        void Beep(bool on)
+        {
+            Console.Title = on ? "CHIP-8: BEEPING…" : "CHIP-8";
+        }
     }
 }
